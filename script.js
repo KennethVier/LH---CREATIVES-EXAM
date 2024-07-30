@@ -177,8 +177,7 @@ $(document).ready(function() {
 
     function updateAccordionFromAttributes(title, headers, descriptions) {
         const accordionContainer = document.getElementById('accordion-placeholder');
-        
-        // Update <h1> tag if title attribute is present
+
         if (title) {
             const h1 = accordionContainer.querySelector('h1');
             if (h1) {
@@ -190,7 +189,6 @@ $(document).ready(function() {
             }
         }
 
-        // Update accordion items if headers and descriptions attributes are present
         const accordionButtons = accordionContainer.getElementsByClassName('accordion');
         const accordionPanels = accordionContainer.getElementsByClassName('panel');
 
