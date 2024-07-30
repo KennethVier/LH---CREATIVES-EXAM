@@ -1,0 +1,71 @@
+.myaccordion{
+    margin-left: 18%;
+    margin-right: 16.6%;
+}
+
+.myaccordion h1{
+    font-size: 48px;
+    margin: 50px 0;
+}
+
+.accordion {
+    color: #707070;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    font-weight: bold;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: url(/ASSETS/accordion-arrow-sp@2x.png);
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: url(/ASSETS/accordion-arrow-pc@2x.png);
+  }
+  
+  .panel {
+    padding: 0 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 15px;
+  }
+  
+  .panel p{
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+    .active:after {
+        content: url(/ASSETS/accordion-arrow-sp@2x.png);
+      }
+      .accordion{
+        font-size: 16px;
+      }
+      .myaccordion h1{
+        font-size: 32px;
+    }
+    .myaccordion{
+      margin-left: 15px;
+      margin-right: 0%;
+  }
+  .panel p{
+    font-size: 16px;
+  }
+}

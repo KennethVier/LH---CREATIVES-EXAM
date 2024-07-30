@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-family: "Roboto";
+}
+
+
+.mynav {
+    width: 100vw;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.mycard {
+    margin-left: 18%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.myform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 17%;
+    margin-right: 15.5%;
+    padding: 30px 0;
+}
+
+.myaccordion{
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .carousel{
+        overflow-x: auto;
+    }
+    .mycard {
+        margin-left: 20px;
+    }
+    .myform{
+        margin-inline: 0;
+    }
+}
+
+

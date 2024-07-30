@@ -1,0 +1,47 @@
+.hero-img {
+    background-image: url(/ASSETS/hero-bg_pc@2x.png);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+    margin-top: 60px;
+}
+
+.hero-text h1 {
+    font-size: 120px;
+}
+
+.hero-text p {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-img {
+        background-image: url(/ASSETS/hero-bg_sp.png);
+        background-size: cover;
+        height: 95vh;
+        max-height: 100%;
+    }
+    .hero-text h1 {
+        text-align: center;
+    }
+    .hero-text p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero-text h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    .hero-text p {
+        font-size: 32px;
+        text-align: center;
+    }
+}

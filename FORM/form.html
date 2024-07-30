@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-cont">
+        <h1>Form</h1>
+        <form>
+            <div class="form-row">
+                <label for="name" class="lab-form">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-row">
+                <label for="company" class="lab-form">Company</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div class="form-row">
+                <label for="email" class="lab-form">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-row">
+                <label for="select" class="lab-form">Select Field</label>
+                <select id="select" name="select">
+                    <option value="">Please select</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <option value="option4">Option 4</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label class="lab-form">Radio Field</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="radio" value="1"> Selection 1</label>
+                    <label><input type="radio" name="radio" value="2"> Selection 2</label>
+                    <label><input type="radio" name="radio" value="3"> Selection 3</label>
+                    <label><input type="radio" name="radio" value="4"> Selection 4</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label class="lab-form">Checkbox Field</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="checkbox" value="1">
+                        <span class="custom-checkbox"></span>
+                        Selection 1
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="2">
+                        <span class="custom-checkbox"></span>
+                        Selection 2
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="3">
+                        <span class="custom-checkbox"></span>
+                        Selection 3
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox" value="4">
+                        <span class="custom-checkbox"></span>
+                        Selection 4
+                    </label>
+                </div>
+            </div>
+            <div class="form-row submit-row">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

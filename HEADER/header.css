@@ -1,0 +1,130 @@
+
+
+.nav-header {
+    background-color: #FFF000;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+.logo-cont img {
+    height: 50px;
+    width: 143px;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 70px;
+}
+
+.navlist a {
+    color: #333333;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.contact {
+    background-color: #E3007F;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon {
+    display: none;
+}
+
+.icon-external
+{
+    margin-left: 5px;
+}
+
+.contact.small-screen {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navlist {
+        margin-left: 0;
+    }
+    .navlist a {
+        font-size: 16px;
+    }
+    .contact{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        right: 0;
+        background-color: #FFF000;
+        width: 100%;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navlist a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px;
+        width: 100%;
+    }
+
+    .icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    .navlist.responsive {
+        display: flex;
+    }
+
+    .navlist.responsive .icon {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .contact.large-screen {
+        display: none;
+    }
+
+    .contact.small-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+    .icon-external
+    {
+        margin-left: 15px;
+    }
+}

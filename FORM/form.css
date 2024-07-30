@@ -1,0 +1,171 @@
+.form-cont {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 30px 0;
+}   
+
+form {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+.form-row .lab-form{
+    font-weight: bold;
+    padding-right: 20px;
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-row select {
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-inline-start: 20px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"]{
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-inline-start: 20px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-inline-start: 20px;
+    font-size: 16px;
+}
+
+.radio-group, .checkbox-group label{
+    display: flex;
+    align-items: center;
+}
+.checkbox-group input{
+    text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid #E3007F;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    display: block;
+}
+
+.submit-row {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0px solid #ccc;
+
+}
+
+.submit-btn {
+    background-color: #E3007F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 32px;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .form-row label {
+        width: 96%;
+        padding-bottom: 5px;
+    }
+
+    .radio-group, .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        font-size: 20px;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="email"], 
+    .radio-group, .checkbox-group{
+        margin-inline-start: 0;
+        width: 95%;
+    }
+    .form-row select {
+        width: 100%;
+        margin-inline-start: 0;
+    }
+}
