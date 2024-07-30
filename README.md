@@ -1,6 +1,6 @@
 Components and Usage
 
-1. Hero Section.
+1. Hero Section:
 The Hero section includes a main heading and a subheading. Use the following data attributes to customize the text content:
 
 <div id="hero-container" 
@@ -12,7 +12,7 @@ The Hero section includes a main heading and a subheading. Use the following dat
     data-hero-subtitle: Sets the subheading text displayed in the Hero section.
 
 
-2. Header Section.
+2. Header Section:
 The Header section features a logo, navigation links, and a contact link. Customize this section using the following data attributes:
 
 <div id="header-placeholder" 
@@ -34,7 +34,7 @@ The Header section features a logo, navigation links, and a contact link. Custom
         data-contact-text: Text for the contact link displayed in the header.
 
 
-3. Carousel Section.
+3. Carousel Section:
 The Carousel section displays a series of images with optional captions. Use the following data attributes to configure the content:
 
 <div id="carousel-container" 
@@ -50,7 +50,7 @@ The Carousel section displays a series of images with optional captions. Use the
         data-carousel-items: A JSON array of objects, each containing src (image URL) and alt (alt text for the image).
 
 
-4. Cards Section.
+4. Cards Section:
 The Cards section supports different column layouts to display various content cards. Customize the cards using these data attributes:
 
 <div id="cards-placeholder"
@@ -71,7 +71,7 @@ The Cards section supports different column layouts to display various content c
         data-three-column-cards: A JSON array of card objects for the three-column layout with similar properties as above.
 
 
-5. Accordion Section.
+5. Accordion Section:
 The Accordion section allows for expandable and collapsible content panels. Use these data attributes to configure the content:
 
 <div id="accordion-placeholder"
